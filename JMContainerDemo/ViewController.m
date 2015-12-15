@@ -52,8 +52,6 @@
         default:
             return [[BlueViewController alloc] init];
     }
-    return nil;
-
 }
 
 
