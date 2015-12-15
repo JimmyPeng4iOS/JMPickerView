@@ -77,6 +77,8 @@
     {
         _pickerView = [JMPickerView pickerViewWithBaseViewController:self];
         
+        _pickerView.frame = CGRectMake(0,108, ScreenWidth, ScreenHeight-108);
+        
         self.view = _pickerView;
         
         [self.view addSubview:self.topView];

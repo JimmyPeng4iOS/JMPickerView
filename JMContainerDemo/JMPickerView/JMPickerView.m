@@ -39,6 +39,8 @@
         
         self.isSwitching = NO;
         
+        self.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+        
         self.baseViewController = baseController;
         
     }
@@ -134,6 +136,7 @@
         }];
         
         _oldIndex = index;
+        
         self.oldVC = newvc;
     }
     else
@@ -146,7 +149,7 @@
     }
     
     _willVC = nil;
-//    panToIndex_ = -1;
+    
 }
 
 //移除旧的控制器
@@ -179,7 +182,7 @@
         
         [self.baseViewController addChildViewController:vc];
         
-        vc.view.frame = CGRectMake(0, 108,ScreenWidth, 559);
+        vc.view.frame = self.frame;
         
         [self addSubview:vc.view];
         
