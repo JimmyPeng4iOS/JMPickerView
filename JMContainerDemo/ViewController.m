@@ -2,8 +2,8 @@
 //  ViewController.m
 //  JMContainerDemo
 //
-//  Created by 彭继宗 on 15/12/7.
-//  Copyright © 2015年 彭继宗. All rights reserved.
+//  Created by Jimmy on 15/12/7.
+//  Copyright © 2015年 Jimmy. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -30,15 +30,10 @@
 {
     [super viewDidLoad];
     
-    
     self.topView.delegate = self;
     
-    
-    self.pickerView.baseViewController = self;
-    
+    self.pickerView.seletedIndex = 0;
 
-    self.pickerView.seletedIndex = 3;
-    
 }
 
 
@@ -56,7 +51,6 @@
             return [[YellowViewController alloc] init];
         default:
             return [[BlueViewController alloc] init];
-            break;
     }
     return nil;
 
@@ -69,9 +63,9 @@
 {
     if (_topView == nil)
     {
-        _topView = [JMtopSeleteView topViewWithNum:4 andTitle:@[@"gray",@"red",@"yellow",@"blue"] titleColor:[UIColor orangeColor]];
+        _topView = [JMtopSeleteView topViewWithNum:4 andTitle:@[@"gray",@"red",@"yellow",@"blue"] titleColor:[UIColor orangeColor] barColor:[UIColor whiteColor]];
         
-        _topView.frame = CGRectMake(0, 64, 375, 44);
+        _topView.frame = CGRectMake(0, 64,ScreenWidth, 44);
         
     }
     return _topView;
@@ -81,7 +75,7 @@
 {
     if (_pickerView == nil)
     {
-        _pickerView = [[JMPickerView alloc] init];
+        _pickerView = [JMPickerView pickerViewWithBaseViewController:self];
         
         self.view = _pickerView;
         

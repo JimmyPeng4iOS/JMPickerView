@@ -16,7 +16,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.36534031688616131" blue="0.36855853858019949" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="7mO-h1-5dz">
                         <nil key="title"/>
@@ -25,7 +25,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="410.5" y="1025.5"/>
+            <point key="canvasLocation" x="578.5" y="1025.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yBT-vV-ekG">
@@ -43,7 +43,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQx-iq-hLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57.066666666666663" y="976.96000000000004"/>
+            <point key="canvasLocation" x="214" y="976"/>
         </scene>
     </scenes>
 </document>

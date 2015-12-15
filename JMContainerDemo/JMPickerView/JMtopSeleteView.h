@@ -2,12 +2,12 @@
 //  JMtopSeleteView.h
 //  JMtopSeleteViewDemo
 //
-//  Created by 彭继宗 on 15/12/4.
-//  Copyright © 2015年 彭继宗. All rights reserved.
+//  Created by Jimmy on 15/12/4.
+//  Copyright © 2015年 Jimmy. All rights reserved.
 //
 
 
-
+#import "JMPickerView.h"
 #import <UIKit/UIKit.h>
 
 @class JMtopSeleteView;
@@ -27,17 +27,16 @@
  */
 - (UIViewController *)JMtopSeleteView:(JMtopSeleteView *)sender controllerAt:(NSInteger)index;
 @optional
-- (void)JMtopSeleteView:(JMtopSeleteView *)sender didSelectedAt:(NSInteger)index;
+
 @end
 
 
 
 @interface JMtopSeleteView : UIView
 
-/**
- *  标题的数目
- */
-@property (nonatomic, assign) int       numOfTitle;
+//代理
+@property(nonatomic, weak)id<JMtopSeleteViewDelegate> delegate;
+
 //旧的index
 @property (nonatomic, assign) NSInteger oldIndex;
 //新的index
@@ -51,10 +50,9 @@
  *  @param color      整体的颜色
  *
  */
-+ (instancetype)topViewWithNum:(NSInteger)number andTitle:(NSArray *)titleArray titleColor:(UIColor *)color;
++ (instancetype)topViewWithNum:(NSInteger)number andTitle:(NSArray *)titleArray titleColor:(UIColor *)titleColor barColor:(UIColor *)barColor;
 
-//代理
-@property(nonatomic, weak)id<JMtopSeleteViewDelegate> delegate;
+
 
 
 @end

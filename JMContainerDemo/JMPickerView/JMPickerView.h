@@ -3,10 +3,12 @@
 //  JMContainerDemo
 //
 //  Created by JimmyPeng on 15/12/13.
-//  Copyright © 2015年 彭继宗. All rights reserved.
+//  Copyright © 2015年 Jimmy. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
 
 @class JMPickerView;
 
@@ -15,9 +17,9 @@
  */
 @protocol JMPickerViewDataSource <NSObject>
 
-//返回一个要添加的子控制器
-- (UIViewController *)JMPickerView:(JMPickerView *)sender controllerAt:(NSInteger)index;
+//返回一个要添加的子控制器(缓存)
 
+- (UIViewController *)JMPickerView:(JMPickerView *)sender controllerAt:(NSInteger)index;
 @end
 
 /**
@@ -26,15 +28,10 @@
 @protocol JMPickerViewDelegate <NSObject>
 
 @optional
-//跳转的方法
-- (void)JMPickerView:(JMPickerView *)slide switchingFrom:(NSInteger)oldIndex to:(NSInteger)toIndex percent:(float)percent;
-
+//选中按钮的方法
 - (void)JMPickerView:(JMPickerView *)slide didSwitchTo:(NSInteger)index;
 
-- (void)JMPickerView:(JMPickerView *)slide switchCanceled:(NSInteger)oldIndex;
-
 @end
-
 
 
 @interface JMPickerView : UIView
@@ -47,6 +44,17 @@
 //数据源
 @property (nonatomic, weak) id<JMPickerViewDataSource>dataSource;
 
+//跳转控制器
 - (void)switchTo:(NSInteger)index;
+
+/**
+ *  外界构造方法
+ *
+ *  @param baseController 父容器控制器
+ *  @param seletedIndex   一开始选中的index
+ *
+ *  @return 构件好的pickerView
+ */
++ (instancetype)pickerViewWithBaseViewController:(UIViewController *)baseController;
 
 @end

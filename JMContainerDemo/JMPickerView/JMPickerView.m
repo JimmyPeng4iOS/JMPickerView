@@ -3,7 +3,7 @@
 //  JMContainerDemo
 //
 //  Created by JimmyPeng on 15/12/13.
-//  Copyright © 2015年 彭继宗. All rights reserved.
+//  Copyright © 2015年 Jimmy. All rights reserved.
 //
 
 #import "JMPickerView.h"
@@ -21,13 +21,29 @@
 //新的控制器
 @property (nonatomic, strong) UIViewController *willVC;
 
-
-
 @end
 
 @implementation JMPickerView
 
 
++ (instancetype)pickerViewWithBaseViewController:(UIViewController *)baseController
+{
+    return [[self alloc] initWithBaseViewController:baseController];    
+}
+
+- (instancetype)initWithBaseViewController:(UIViewController *)baseController
+{
+    if (self = [super init])
+    {
+        self.oldIndex = -1;
+        
+        self.isSwitching = NO;
+        
+        self.baseViewController = baseController;
+        
+    }
+    return self;
+}
 
 - (instancetype)init
 {
@@ -37,7 +53,6 @@
         
         self.isSwitching = NO;
         
-        self.backgroundColor = [UIColor whiteColor];
     }
     return self;
 }
@@ -67,20 +82,12 @@
         //设置跳转bool为YES
         _isSwitching = YES;
         
-        //UIViewController *oldvc = [self.dataSource DLpickerView:self controllerAt:oldIndex_];;
-        
         //定义oldVC = 旧的VC
         UIViewController *oldvc = _oldVC;
         
         //定义newVC = index返回的控制器
         UIViewController *newvc = [self.dataSource JMPickerView:self controllerAt:index];
         
-        /**
-         *  1.当我们向我们的视图控制器容器中调用removeFromParentViewController方法时，必须要先调用该方法，且parent参数为nil：
-         
-         2. 当我们调用addChildViewController方法时，在添加子视图控制器之前将自动调用该方法。所以，就不需要我们显示调用了。
-         */
-        //        [oldvc willMoveToParentViewController:nil];
         //添加子控制器
         [self.baseViewController addChildViewController:newvc];
         
@@ -120,6 +127,7 @@
             oldvc.view.frame = oldEndRect;
         } completion:^(BOOL finished) {
             [oldvc removeFromParentViewController];
+            
             [newvc didMoveToParentViewController:self.baseViewController];
             
             _isSwitching = NO;
@@ -171,7 +179,7 @@
         
         [self.baseViewController addChildViewController:vc];
         
-        vc.view.frame = CGRectMake(0, 108, 375, 559);
+        vc.view.frame = CGRectMake(0, 108,ScreenWidth, 559);
         
         [self addSubview:vc.view];
         

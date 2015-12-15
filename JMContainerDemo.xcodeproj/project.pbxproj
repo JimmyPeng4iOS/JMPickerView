@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BFB51B681C1D1F1700951E03 /* YellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB51B671C1D1F1700951E03 /* YellowViewController.m */; };
-		BFB51B6E1C1D776C00951E03 /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB51B6D1C1D776C00951E03 /* BlueViewController.m */; };
 		BFB51B741C1D96AA00951E03 /* JMPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB51B711C1D96AA00951E03 /* JMPickerView.m */; };
 		BFB51B751C1D96AA00951E03 /* JMtopSeleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB51B731C1D96AA00951E03 /* JMtopSeleteView.m */; };
 		BFCC518E1C15107B00E0FFBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCC518D1C15107B00E0FFBD /* main.m */; };
@@ -17,15 +15,14 @@
 		BFCC51971C15107B00E0FFBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCC51951C15107B00E0FFBD /* Main.storyboard */; };
 		BFCC51991C15107B00E0FFBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCC51981C15107B00E0FFBD /* Assets.xcassets */; };
 		BFCC519C1C15107B00E0FFBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCC519A1C15107B00E0FFBD /* LaunchScreen.storyboard */; };
-		BFCC51A51C1511B200E0FFBD /* RedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCC51A41C1511B200E0FFBD /* RedViewController.m */; };
-		BFCC51A81C1511BA00E0FFBD /* GrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCC51A71C1511BA00E0FFBD /* GrayViewController.m */; };
+		BFDF99001C1F9CA200610323 /* JMControllerCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDF98FF1C1F9CA200610323 /* JMControllerCache.m */; };
+		BFDF990B1C1FA36500610323 /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDF99041C1FA36500610323 /* BlueViewController.m */; };
+		BFDF990C1C1FA36500610323 /* GrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDF99061C1FA36500610323 /* GrayViewController.m */; };
+		BFDF990D1C1FA36500610323 /* RedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDF99081C1FA36500610323 /* RedViewController.m */; };
+		BFDF990E1C1FA36500610323 /* YellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDF990A1C1FA36500610323 /* YellowViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BFB51B661C1D1F1700951E03 /* YellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowViewController.h; sourceTree = "<group>"; };
-		BFB51B671C1D1F1700951E03 /* YellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowViewController.m; sourceTree = "<group>"; };
-		BFB51B6C1C1D776C00951E03 /* BlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
-		BFB51B6D1C1D776C00951E03 /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
 		BFB51B701C1D96AA00951E03 /* JMPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMPickerView.h; sourceTree = "<group>"; };
 		BFB51B711C1D96AA00951E03 /* JMPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMPickerView.m; sourceTree = "<group>"; };
 		BFB51B721C1D96AA00951E03 /* JMtopSeleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMtopSeleteView.h; sourceTree = "<group>"; };
@@ -40,10 +37,16 @@
 		BFCC51981C15107B00E0FFBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFCC519B1C15107B00E0FFBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFCC519D1C15107B00E0FFBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFCC51A31C1511B200E0FFBD /* RedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedViewController.h; sourceTree = "<group>"; };
-		BFCC51A41C1511B200E0FFBD /* RedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedViewController.m; sourceTree = "<group>"; };
-		BFCC51A61C1511BA00E0FFBD /* GrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayViewController.h; sourceTree = "<group>"; };
-		BFCC51A71C1511BA00E0FFBD /* GrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayViewController.m; sourceTree = "<group>"; };
+		BFDF98FE1C1F9CA200610323 /* JMControllerCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMControllerCache.h; sourceTree = "<group>"; };
+		BFDF98FF1C1F9CA200610323 /* JMControllerCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMControllerCache.m; sourceTree = "<group>"; };
+		BFDF99031C1FA36500610323 /* BlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		BFDF99041C1FA36500610323 /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+		BFDF99051C1FA36500610323 /* GrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayViewController.h; sourceTree = "<group>"; };
+		BFDF99061C1FA36500610323 /* GrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayViewController.m; sourceTree = "<group>"; };
+		BFDF99071C1FA36500610323 /* RedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedViewController.h; sourceTree = "<group>"; };
+		BFDF99081C1FA36500610323 /* RedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedViewController.m; sourceTree = "<group>"; };
+		BFDF99091C1FA36500610323 /* YellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowViewController.h; sourceTree = "<group>"; };
+		BFDF990A1C1FA36500610323 /* YellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 				BFB51B711C1D96AA00951E03 /* JMPickerView.m */,
 				BFB51B721C1D96AA00951E03 /* JMtopSeleteView.h */,
 				BFB51B731C1D96AA00951E03 /* JMtopSeleteView.m */,
+				BFDF98FE1C1F9CA200610323 /* JMControllerCache.h */,
+				BFDF98FF1C1F9CA200610323 /* JMControllerCache.m */,
 			);
 			path = JMPickerView;
 			sourceTree = "<group>";
@@ -87,19 +92,12 @@
 		BFCC518B1C15107B00E0FFBD /* JMContainerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BFDF99021C1FA36500610323 /* testViewController */,
 				BFB51B6F1C1D96AA00951E03 /* JMPickerView */,
 				BFCC518F1C15107B00E0FFBD /* AppDelegate.h */,
 				BFCC51901C15107B00E0FFBD /* AppDelegate.m */,
 				BFCC51921C15107B00E0FFBD /* ViewController.h */,
 				BFCC51931C15107B00E0FFBD /* ViewController.m */,
-				BFCC51A61C1511BA00E0FFBD /* GrayViewController.h */,
-				BFCC51A71C1511BA00E0FFBD /* GrayViewController.m */,
-				BFCC51A31C1511B200E0FFBD /* RedViewController.h */,
-				BFCC51A41C1511B200E0FFBD /* RedViewController.m */,
-				BFB51B661C1D1F1700951E03 /* YellowViewController.h */,
-				BFB51B671C1D1F1700951E03 /* YellowViewController.m */,
-				BFB51B6C1C1D776C00951E03 /* BlueViewController.h */,
-				BFB51B6D1C1D776C00951E03 /* BlueViewController.m */,
 				BFCC51951C15107B00E0FFBD /* Main.storyboard */,
 				BFCC51981C15107B00E0FFBD /* Assets.xcassets */,
 				BFCC519A1C15107B00E0FFBD /* LaunchScreen.storyboard */,
@@ -115,6 +113,21 @@
 				BFCC518D1C15107B00E0FFBD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFDF99021C1FA36500610323 /* testViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFDF99031C1FA36500610323 /* BlueViewController.h */,
+				BFDF99041C1FA36500610323 /* BlueViewController.m */,
+				BFDF99051C1FA36500610323 /* GrayViewController.h */,
+				BFDF99061C1FA36500610323 /* GrayViewController.m */,
+				BFDF99071C1FA36500610323 /* RedViewController.h */,
+				BFDF99081C1FA36500610323 /* RedViewController.m */,
+				BFDF99091C1FA36500610323 /* YellowViewController.h */,
+				BFDF990A1C1FA36500610323 /* YellowViewController.m */,
+			);
+			path = testViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,14 +202,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFB51B751C1D96AA00951E03 /* JMtopSeleteView.m in Sources */,
-				BFCC51A81C1511BA00E0FFBD /* GrayViewController.m in Sources */,
-				BFCC51A51C1511B200E0FFBD /* RedViewController.m in Sources */,
+				BFDF990C1C1FA36500610323 /* GrayViewController.m in Sources */,
+				BFDF99001C1F9CA200610323 /* JMControllerCache.m in Sources */,
 				BFCC51941C15107B00E0FFBD /* ViewController.m in Sources */,
+				BFDF990D1C1FA36500610323 /* RedViewController.m in Sources */,
 				BFB51B741C1D96AA00951E03 /* JMPickerView.m in Sources */,
+				BFDF990E1C1FA36500610323 /* YellowViewController.m in Sources */,
+				BFDF990B1C1FA36500610323 /* BlueViewController.m in Sources */,
 				BFCC51911C15107B00E0FFBD /* AppDelegate.m in Sources */,
-				BFB51B681C1D1F1700951E03 /* YellowViewController.m in Sources */,
 				BFCC518E1C15107B00E0FFBD /* main.m in Sources */,
-				BFB51B6E1C1D776C00951E03 /* BlueViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

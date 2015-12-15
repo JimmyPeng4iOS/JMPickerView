@@ -2,8 +2,8 @@
 //  GrayViewController.m
 //  JMContainerDemo
 //
-//  Created by 彭继宗 on 15/12/7.
-//  Copyright © 2015年 彭继宗. All rights reserved.
+//  Created by Jimmy on 15/12/7.
+//  Copyright © 2015年 Jimmy. All rights reserved.
 //
 
 #import "GrayViewController.h"
@@ -14,9 +14,11 @@
 
 @implementation GrayViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
+    NSLog(@"GrayViewDidLoad");
     
     self.view.backgroundColor = [UIColor grayColor];
 }
