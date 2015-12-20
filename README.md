@@ -21,7 +21,10 @@
     if (_topView == nil)
     {
         //指定按钮的数目(不建议超过6个), 标题数组 , 标题颜色,  bar的颜色
-        _topView = [JMtopSeleteView topViewWithNum:4 andTitle:@[@"gray",@"red",@"yellow",@"blue"] titleColor:[UIColor orangeColor] barColor:[UIColor whiteColor]];
+                _topView = [JMtopSeleteView topViewWithNum:4
+                                    andTitle:@[@"gray",@"red",@"yellow",@"blue"]
+                                    titleColor:[UIColor orangeColor]
+                                    barColor:[UIColor whiteColor]];
         //可自定义frame
         _topView.frame = CGRectMake(0, 64,ScreenWidth, 44);
     }
